@@ -1,6 +1,8 @@
 # aframe-mri-poc
 Proof of concept of showing MRI scans in 3D in WebVR using A-Frame
 
+<img src="./assets/aframe-mri-poc.gif" />
+
 This app is a very simple proof of concept showing sequential MRI scans of a friend's knee (thanks Tricky!) arranged in 3D space with low opacity to create an illusion of volume.
 
 Use your mouse to <code>click</code> and <code>drag</code> to rotate the image. Use the <code>scrollwheel</code> to zoom in / out.
