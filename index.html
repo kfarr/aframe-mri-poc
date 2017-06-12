@@ -8,7 +8,7 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            max-width: 700px;
+            max-width: 400px;
             box-sizing: border-box;
             padding: 1.5em;
             color: #FFF;
@@ -74,4 +74,9 @@
         <p>Use your mouse to <code>click and drag</code> to rotate the image. Use the <code>scrollwheel</code> to zoom in / out.</p>
         <p><a href="https://github.com/kfarr/aframe-mri-poc">See the code and more info on the git repo.</a></p>
     </div>
+    <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.getElementById('dialog').classList.remove('intro-overlay');
+    }
+    </script>
   </body>
