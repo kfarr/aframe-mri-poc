@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.js"></script>
+    <script src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.6/dist/aframe-orbit-controls-component.min.js"></script>
+    <style>
+          .intro-overlay {
+            z-index: 1;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            max-width: 700px;
+            box-sizing: border-box;
+            padding: 1.5em;
+            color: #FFF;
+            background: rgba(0, 0, 0, 0.75);
+            font-family: Source Sans Pro, Helvetica Neue, Helvetica, Arial, sans-serif;
+          }
+        </style>
+  </head>
+  <body>
+    <a-scene>
+      <a-entity
+      id="camera"
+      camera="fov: 80; zoom: 6;"
+      position="0 2 5"
+      orbit-controls="
+        invertZoom: true;
+        autoRotate: true;
+        target: #knee;
+        enableDamping: true;
+        dampingFactor: 0.125;
+        rotateSpeed:0.25;
+        autoRotateSpeed:0.5;
+        minDistance:3;
+        maxDistance:100;
+      "
+      mouse-cursor=""
+    >
+  </a-entity>
+
+      <a-entity id="knee" position="0 0 0">
+        <a-image src="assets/knee00.jpg" position="0 0 0" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee01.jpg" position="0 0 0.02" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee02.jpg" position="0 0 0.04" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee03.jpg" position="0 0 0.06" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee04.jpg" position="0 0 0.08" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee05.jpg" position="0 0 0.10" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee06.jpg" position="0 0 0.12" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee07.jpg" position="0 0 0.14" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee08.jpg" position="0 0 0.16" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee09.jpg" position="0 0 0.18" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee10.jpg" position="0 0 0.20" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee11.jpg" position="0 0 0.22" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee12.jpg" position="0 0 0.24" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee13.jpg" position="0 0 0.26" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee14.jpg" position="0 0 0.28" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee15.jpg" position="0 0 0.30" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee16.jpg" position="0 0 0.32" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee17.jpg" position="0 0 0.34" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee18.jpg" position="0 0 0.36" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee19.jpg" position="0 0 0.38" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee20.jpg" position="0 0 0.40" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee21.jpg" position="0 0 0.42" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee22.jpg" position="0 0 0.44" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee23.jpg" position="0 0 0.46" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee24.jpg" position="0 0 0.48" material="opacity: 0.15"></a-image>
+        <a-image src="assets/knee25.jpg" position="0 0 0.50" material="opacity: 0.15"></a-image>
+      </a-entity>
+      <a-sky color="gray">
+    </a-scene>
+    <div id="dialog" class="img-rounded intro-overlay">
+        <h4><strong>A-Frame MRI Viewer POC</strong></h4>
+        <p>This app is a very simple proof of concept showing sequential MRI scans of a friend's knee (thanks Tricky!) arranged in 3D space with low opacity to create an illusion of volume.</p>
+        <p>Use your mouse to <code>click and drag</code> to rotate the image.</p>
+        <p>Use the <code>scrollwheel</code> to zoom in / out.</p>
+    </div>
+  </body>
