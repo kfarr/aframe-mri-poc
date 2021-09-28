@@ -1,6 +1,8 @@
 # aframe-mri-poc
 Proof of concept of showing MRI scans in 3D in WebVR using A-Frame
 
+(Note this repo is out of date, it uses old versions of A-Frame / three.js. Check out this [newer glitch example](https://glitch.com/~brainframe) by Emmett Baber instead which uses the same technique.)
+
 <a href="https://kfarr.github.io/aframe-mri-poc/index.html">
 <img src="./assets/aframe-mri-poc.gif" />
 
